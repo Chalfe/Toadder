@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7502542846322237361}
   - component: {fileID: 2981572798387113045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turtle Group 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turtle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8608597636988252138, guid: bb7a1bd7f4e8b4d4da9e3bac9356d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7a1bd7f4e8b4d4da9e3bac9356d2e5, type: 3}
 --- !u!4 &5022179306265592414 stripped
@@ -164,6 +168,10 @@ PrefabInstance:
     - target: {fileID: 8608597636988252138, guid: bb7a1bd7f4e8b4d4da9e3bac9356d2e5, type: 3}
       propertyPath: m_Name
       value: Turtle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608597636988252138, guid: bb7a1bd7f4e8b4d4da9e3bac9356d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7a1bd7f4e8b4d4da9e3bac9356d2e5, type: 3}

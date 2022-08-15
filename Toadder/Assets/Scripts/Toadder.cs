@@ -44,8 +44,16 @@ public class Toadder : MonoBehaviour
     }
     void Move(Vector3 direction)
     {
-            Vector3 destination = transform.position + direction;
-            StartCoroutine((Leap(destination)));
+        Vector3 destination = transform.position + direction;
+
+        Collider2D barrier = Physics2D.OverlapBox(destination, Vector2.zero, 0f, LayerMask.GetMask("Barrier"));
+
+        if (barrier != null)
+        {
+            return;
+        }
+
+        StartCoroutine((Leap(destination)));
     }
     private IEnumerator Leap(Vector3 destination)
     {
