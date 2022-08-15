@@ -410,6 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Idle: {fileID: 21300000, guid: accdfca821fcfad4aa0e79fe4138f7df, type: 3}
   LeapSprite: {fileID: 21300000, guid: c032d92b984378d4ebe60f300734cb08, type: 3}
+  Dead: {fileID: 21300000, guid: 1695d102dbd9a5949a838586c2e47c81, type: 3}
 --- !u!1001 &335427628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,7 +695,8 @@ GameObject:
   m_Component:
   - component: {fileID: 521239172}
   - component: {fileID: 521239173}
-  m_Layer: 0
+  - component: {fileID: 521239174}
+  m_Layer: 9
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,6 +768,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &521239174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521239171}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.75}
+  m_EdgeRadius: 0
 --- !u!1001 &601439777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2716,6 +2744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toadder
       objectReference: {fileID: 0}
+    - target: {fileID: 3238278408279525232, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3705598255856799522, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2759,6 +2791,14 @@ PrefabInstance:
     - target: {fileID: 3705598255856799522, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379284984102313481, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
+      propertyPath: m_Size.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379284984102313481, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4919b567f613bea4296f1bfaeca97338, type: 3}
